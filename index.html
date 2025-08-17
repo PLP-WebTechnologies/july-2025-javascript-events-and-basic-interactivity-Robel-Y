@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page with JavaScript</h1>
+
+  <!-- 🎮 Light/Dark Mode Toggle -->
+  <button id="toggleThemeBtn">Toggle Light/Dark Mode</button>
+
+  <!-- 🎮 Click Counter -->
+  <h2>Click Counter</h2>
+  <p>You've clicked <span id="clickCount">0</span> times.</p>
+  <button id="clickMeBtn">Click Me!</button>
+
+  <!-- 📋 Form with Validation -->
+  <h2>Register Here</h2>
+  <form id="registerForm" novalidate>
+    <label>
+      Name:
+      <input type="text" id="nameInput" />
+      <span class="error" id="nameError"></span>
+    </label><br>
+
+    <label>
+      Email:
+      <input type="email" id="emailInput" />
+      <span class="error" id="emailError"></span>
+    </label><br>
+
+    <label>
+      Password:
+      <input type="password" id="passwordInput" />
+      <span class="error" id="passwordError"></span>
+    </label><br>
+
+    <button type="submit">Submit</button>
+    <p id="formSuccess" class="success"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
